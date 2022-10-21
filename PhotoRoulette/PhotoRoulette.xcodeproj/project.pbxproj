@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AA053C12903237E00D1D3C0 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA053C02903237E00D1D3C0 /* GameSelectionViewController.swift */; };
+		6AA053C3290327E000D1D3C0 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA053C2290327E000D1D3C0 /* CreateGameViewController.swift */; };
 		7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */; };
 		7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */; };
 		7BCA53BA28E61DF700EA9E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53B828E61DF700EA9E71 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AA053C02903237E00D1D3C0 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
+		6AA053C2290327E000D1D3C0 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */,
 				7BCA53C028E61DF900EA9E71 /* Info.plist */,
 				7BCA53E228E61E4300EA9E71 /* LoginViewController.swift */,
+				6AA053C02903237E00D1D3C0 /* GameSelectionViewController.swift */,
+				6AA053C2290327E000D1D3C0 /* CreateGameViewController.swift */,
 			);
 			path = PhotoRoulette;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCA53E328E61E4300EA9E71 /* LoginViewController.swift in Sources */,
+				6AA053C12903237E00D1D3C0 /* GameSelectionViewController.swift in Sources */,
 				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
 				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
+				6AA053C3290327E000D1D3C0 /* CreateGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
