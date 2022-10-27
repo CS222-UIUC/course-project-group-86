@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A71B85D28F7931C00B9990A /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A71B85C28F7931C00B9990A /* ImportViewController.swift */; };
 		7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */; };
 		7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */; };
 		7BCA53BA28E61DF700EA9E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53B828E61DF700EA9E71 /* Main.storyboard */; };
@@ -42,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+ signUp
 		0395753EF89A44706CCD56BF /* Pods_PhotoRouletteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRouletteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.release.xcconfig"; sourceTree = "<group>"; };
 		58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette_PhotoRouletteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		6A71B85C28F7931C00B9990A /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
+ main
 		7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +149,7 @@
 				7BCA53BB28E61DF900EA9E71 /* Assets.xcassets */,
 				7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */,
 				7BCA53C028E61DF900EA9E71 /* Info.plist */,
+ signUp
 				7BCA53E528E6288500EA9E71 /* LoginViewController.h */,
 				7BCA53E628E6288500EA9E71 /* LoginViewController.m */,
 				7BCA53E428E6288500EA9E71 /* PhotoRoulette-Bridging-Header.h */,
@@ -151,6 +157,8 @@
 				7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */,
 				7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */,
 				7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */,
+				6A71B85C28F7931C00B9990A /* ImportViewController.swift */,
+ main
 			);
 			path = PhotoRoulette;
 			sourceTree = "<group>";
@@ -424,10 +432,14 @@
 			files = (
 				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
 				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
+ signUp
 				7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */,
 				7BCA53E728E6288500EA9E71 /* LoginViewController.m in Sources */,
 				7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */,
 				7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */,
+
+				6A71B85D28F7931C00B9990A /* ImportViewController.swift in Sources */,
+ main
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
