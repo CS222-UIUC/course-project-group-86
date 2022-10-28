@@ -22,6 +22,15 @@ class LogInToAccountViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UITextField!
     
     @IBAction func clickLogin(_ sender: Any) {
+        if (usernameLabel.text == "") {
+            let alert = UIAlertController(title: "Empty Username", message: "Please Enter a Username", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else if (passwordLabel.text == "") {
+            let alert = UIAlertController(title: "Empty Password", message: "Please Enter a Password", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
         PFUser.logInWithUsername(inBackground:usernameLabel.text ?? "", password:passwordLabel.text ?? "") {
           (user: PFUser?, error: Error?) -> Void in
           if user != nil {
@@ -30,6 +39,9 @@ class LogInToAccountViewController: UIViewController {
               self.performSegue(withIdentifier: "login", sender: nil);
           } else {
             // The login failed. Check error to see why.
+              let alert = UIAlertController(title: "Invalid", message: "Wrong Password / Username", preferredStyle: UIAlertController.Style.alert)
+              alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+              self.present(alert, animated: true, completion: nil)
           }
         }
 

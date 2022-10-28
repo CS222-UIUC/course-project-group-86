@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B776D97290B19210050E6B7 /* ImportViewController.swift */; };
 		7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */; };
 		7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */; };
 		7BCA53BA28E61DF700EA9E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53B828E61DF700EA9E71 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		7BCA53CA28E61DF900EA9E71 /* PhotoRouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53C928E61DF900EA9E71 /* PhotoRouletteTests.swift */; };
 		7BCA53D428E61DF900EA9E71 /* PhotoRouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53D328E61DF900EA9E71 /* PhotoRouletteUITests.swift */; };
 		7BCA53D628E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53D528E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift */; };
-		7BCA53E728E6288500EA9E71 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53E628E6288500EA9E71 /* LoginViewController.m */; };
 		7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */; };
 		7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */; };
 		7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */; };
@@ -46,6 +46,7 @@
 		2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.release.xcconfig"; sourceTree = "<group>"; };
 		58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette_PhotoRouletteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B776D97290B19210050E6B7 /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
 		7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +60,6 @@
 		7BCA53D328E61DF900EA9E71 /* PhotoRouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouletteUITests.swift; sourceTree = "<group>"; };
 		7BCA53D528E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouletteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7BCA53E428E6288500EA9E71 /* PhotoRoulette-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoRoulette-Bridging-Header.h"; sourceTree = "<group>"; };
-		7BCA53E528E6288500EA9E71 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		7BCA53E628E6288500EA9E71 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7BCA53E828E62C1300EA9E71 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToAccountViewController.swift; sourceTree = "<group>"; };
@@ -144,13 +143,12 @@
 				7BCA53BB28E61DF900EA9E71 /* Assets.xcassets */,
 				7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */,
 				7BCA53C028E61DF900EA9E71 /* Info.plist */,
-				7BCA53E528E6288500EA9E71 /* LoginViewController.h */,
-				7BCA53E628E6288500EA9E71 /* LoginViewController.m */,
 				7BCA53E428E6288500EA9E71 /* PhotoRoulette-Bridging-Header.h */,
 				7BCA53E828E62C1300EA9E71 /* SignUpViewController.h */,
 				7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */,
 				7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */,
 				7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */,
+				7B776D97290B19210050E6B7 /* ImportViewController.swift */,
 			);
 			path = PhotoRoulette;
 			sourceTree = "<group>";
@@ -425,9 +423,9 @@
 				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
 				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
 				7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */,
-				7BCA53E728E6288500EA9E71 /* LoginViewController.m in Sources */,
 				7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */,
 				7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */,
+				7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

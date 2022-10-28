@@ -12,9 +12,18 @@ class ChooseGameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameLabel.text = PFUser.current()?.username;
+ 
         // Do any additional setup after loading the view.
+        self.createGameButton.layer.cornerRadius = 3;
+        self.joinGameButton.layer.cornerRadius = 3;
+        usernameLabel.text = PFUser.current()?.username;
     }
+    
+    
+    @IBOutlet weak var createGameButton: UIButton!
+    
+    
+    @IBOutlet weak var joinGameButton: UIButton!
     
     @IBOutlet weak var usernameLabel: UILabel!
     
