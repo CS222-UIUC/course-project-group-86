@@ -1,21 +1,32 @@
 //
-//  LoginViewController.swift
+//  ChooseGameViewController.swift
 //  PhotoRoulette
 //
-//  Created by Shreya Vinjamuri on 9/29/22.
+//  Created by Shreya Vinjamuri on 10/14/22.
 //
 
 import UIKit
+import Parse
 
-class LoginViewController: UIViewController {
+class ChooseGameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         // Do any additional setup after loading the view.
+        self.createGameButton.layer.cornerRadius = 3;
+        self.joinGameButton.layer.cornerRadius = 3;
+        usernameLabel.text = PFUser.current()?.username;
     }
     
-
+    
+    @IBOutlet weak var createGameButton: UIButton!
+    
+    
+    @IBOutlet weak var joinGameButton: UIButton!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     /*
     // MARK: - Navigation
 
