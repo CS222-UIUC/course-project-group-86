@@ -44,10 +44,14 @@ class CreateGameViewController: UIViewController, UITableViewDelegate, UITableVi
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
     }
     
-    @objc func loadList(){
+    
+    @objc func loadList(notification: NSNotification){
         //load data here
-        self.playersTableView.reloadData()
+        queryForPlayers(completionHandler: {() in
+            self.playersTableView.reloadData();
+        });
     }
+    
 
     @IBAction func clickGeneratePin(_ sender: Any) {
         let n = Int.random(in: 100000...999999)
