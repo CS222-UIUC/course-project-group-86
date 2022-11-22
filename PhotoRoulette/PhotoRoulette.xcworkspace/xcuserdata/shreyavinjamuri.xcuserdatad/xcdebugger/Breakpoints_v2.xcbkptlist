@@ -62,8 +62,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "queryForPlayers(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -110,8 +110,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "clickGeneratePin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "queryForPlayers(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -190,8 +190,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "queryForPlayers(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "clickGeneratePin(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,8 +270,8 @@
             filePath = "PhotoRoulette/CreateGameViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "loadList(notification:)"
             landmarkType = "7">
             <Locations>

@@ -25,8 +25,8 @@ class ImportViewController: UIViewController, UINavigationControllerDelegate, UI
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             PhotoView.image = image
-            let resized = resizeImage(im: image, size: CGSizeMake(30, 30))
-            let imageData = PhotoView.image!.pngData()! as NSData
+            let resized = resizeImage(im: image, size: CGSizeMake(image.size.width/3, image.size.height/3))
+            let imageData = resized.pngData()! as NSData
             let file = PFFileObject(name: "gameImage.png", data: imageData as Data)
             PFUser.current()?["gameImage"] = file;
             PFUser.current()?.saveInBackground()

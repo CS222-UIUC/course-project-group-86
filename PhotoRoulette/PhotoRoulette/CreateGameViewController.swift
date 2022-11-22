@@ -24,10 +24,15 @@ class CreateGameViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell;
     }
     
+    @IBAction func clickReload(_ sender: Any) {
+        queryForPlayers(completionHandler: {() in
+            self.playersTableView.reloadData();
+        });
+    }
     func queryForPlayers(completionHandler: () -> ()) {
         let currentPin = PFUser.current()?["gamePin"];
         let query = PFUser.query()
-        query?.whereKey("gamePin", equalTo:currentPin)
+        query?.whereKey("gamePin", equalTo:currentPin!)
         do {
             players = try query?.findObjects() as! [PFUser]
         } catch {

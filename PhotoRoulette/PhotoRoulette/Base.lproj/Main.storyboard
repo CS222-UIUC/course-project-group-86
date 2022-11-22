@@ -436,6 +436,16 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ImportButton:" destination="8A8-qy-VZD" eventType="touchUpInside" id="THT-Vj-cnW"/>
+                                    <segue destination="8A8-qy-VZD" kind="show" id="EuV-KU-sQU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-uX-3pg">
+                                <rect key="frame" x="310" y="246" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reload"/>
+                                <connections>
+                                    <action selector="clickReload:" destination="6Un-kj-W3z" eventType="touchUpInside" id="Atc-oW-LTl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -487,6 +497,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="5BF-uI-lFw"/>
         <segue reference="rja-dp-E8A"/>
     </inferredMetricsTieBreakers>
     <resources>
