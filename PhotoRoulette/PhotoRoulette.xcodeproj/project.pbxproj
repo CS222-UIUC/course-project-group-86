@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B714D2A291ED8F600F25247 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D29291ED8F600F25247 /* CreateGameViewController.swift */; };
+		7B714D2E291EDBE600F25247 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */; };
+		7B714D30291EE87C00F25247 /* PlayerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */; };
 		7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B776D97290B19210050E6B7 /* ImportViewController.swift */; };
 		7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */; };
 		7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */; };
@@ -46,6 +49,9 @@
 		2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.release.xcconfig"; sourceTree = "<group>"; };
 		58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette_PhotoRouletteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B714D29291ED8F600F25247 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellTableViewCell.swift; sourceTree = "<group>"; };
 		7B776D97290B19210050E6B7 /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
 		7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */,
 				7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */,
 				7B776D97290B19210050E6B7 /* ImportViewController.swift */,
+				7B714D29291ED8F600F25247 /* CreateGameViewController.swift */,
+				7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */,
+				7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */,
 			);
 			path = PhotoRoulette;
 			sourceTree = "<group>";
@@ -420,12 +429,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B714D2E291EDBE600F25247 /* JoinGameViewController.swift in Sources */,
+				7B714D2A291ED8F600F25247 /* CreateGameViewController.swift in Sources */,
 				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
 				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
 				7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */,
 				7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */,
 				7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */,
 				7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */,
+				7B714D30291EE87C00F25247 /* PlayerCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +616,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2C96ZMXAW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -635,6 +648,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2C96ZMXAW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoRoulette/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

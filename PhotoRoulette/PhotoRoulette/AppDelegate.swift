@@ -11,7 +11,7 @@ import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.server = "https://parseapi.back4app.com"
         }
         Parse.initialize(with: parseConfig)
+        
+//        let currentUser = PFUser.current()
+//        if currentUser != nil {
+//          // Do stuff with the user
+//            let storyboard = UIStoryboard(name: "main", bundle: nil)
+//            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "home")
+//        } else {
+//          // Show the signup or login screen
+//        }
+//       
+        
         return true
     }
 

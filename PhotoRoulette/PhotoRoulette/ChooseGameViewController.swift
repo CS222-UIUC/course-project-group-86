@@ -17,6 +17,9 @@ class ChooseGameViewController: UIViewController {
         self.createGameButton.layer.cornerRadius = 3;
         self.joinGameButton.layer.cornerRadius = 3;
         usernameLabel.text = PFUser.current()?.username;
+        self.navigationItem.setHidesBackButton(true, animated:true);
+
+
     }
     
     
