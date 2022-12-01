@@ -283,7 +283,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3jM-qD-LpQ"/>
-                        <color key="backgroundColor" red="0.59836536650000005" green="0.86300224069999998" blue="0.84313863519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.86274516580000005" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="wUg-yU-89n"/>
                     <connections>
@@ -329,6 +329,15 @@
                                 <color key="backgroundColor" red="0.79316556532366977" green="0.96841138601303101" blue="0.95570417054692325" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.38235674670000003" green="0.85466168590000002" blue="0.82324621980000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSu-JB-fTQ">
+                                <rect key="frame" x="131" y="707" width="132" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Ready to Play!"/>
+                                <connections>
+                                    <segue destination="vss-Ge-17Q" kind="show" id="W1c-j7-JHq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4OO-hH-sPj"/>
                         <color key="backgroundColor" red="0.59836536650000005" green="0.86300224069999998" blue="0.84313863519999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -341,6 +350,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyv-nY-tvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4508" y="737"/>
+        </scene>
+        <!--Choose Pic View Controller-->
+        <scene sceneID="gb5-Iy-PEz">
+            <objects>
+                <viewController id="vss-Ge-17Q" customClass="ChoosePicViewController" customModule="PhotoRoulette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cSb-cc-trH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQP-Rp-rWx" customClass="PFImageView">
+                                <rect key="frame" x="76" y="181" width="240" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYm-1E-jV0">
+                                <rect key="frame" x="76" y="465" width="240" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Player 1"/>
+                                <connections>
+                                    <action selector="Player1Ans:" destination="vss-Ge-17Q" eventType="touchUpInside" id="j57-Ff-VY3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opV-aI-9ji">
+                                <rect key="frame" x="76" y="544" width="240" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Player 2"/>
+                                <connections>
+                                    <action selector="Player2Ans:" destination="vss-Ge-17Q" eventType="touchUpInside" id="X0f-vT-hYU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-7g-ilh">
+                                <rect key="frame" x="76" y="617" width="240" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Player 3"/>
+                                <connections>
+                                    <action selector="Player3Ans:" destination="vss-Ge-17Q" eventType="touchUpInside" id="UaM-tv-m7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-aG-Tx1">
+                                <rect key="frame" x="76" y="690" width="240" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Player 4"/>
+                                <connections>
+                                    <action selector="Player4Ans:" destination="vss-Ge-17Q" eventType="touchUpInside" id="rI8-ST-Z4P"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Right or Wrong?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abU-ri-t2T">
+                                <rect key="frame" x="140" y="768" width="122" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zqc-l3-vov"/>
+                        <color key="backgroundColor" red="0.5480319596189378" green="0.87149856608323373" blue="0.84728355759459806" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VGe-9x-c0w"/>
+                    <connections>
+                        <outlet property="Answer" destination="abU-ri-t2T" id="OUY-ct-vPN"/>
+                        <outlet property="randPic" destination="uQP-Rp-rWx" id="smT-Tr-It0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibg-da-oLM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5409.9236641221369" y="736.61971830985919"/>
         </scene>
         <!--Create Game View Controller-->
         <scene sceneID="AK3-Ji-BHT">
