@@ -7,6 +7,7 @@ target 'PhotoRoulette' do
 
   # Pods for PhotoRoulette
   pod 'Parse'
+  pod 'Parse/UI'
 
   target 'PhotoRouletteTests' do
     inherit! :search_paths
