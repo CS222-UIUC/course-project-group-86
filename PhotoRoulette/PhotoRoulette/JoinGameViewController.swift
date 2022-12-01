@@ -25,6 +25,7 @@ class JoinGameViewController: UIViewController {
         let textfieldInt: Int? = Int(gamePinTextField.text!)
         user?["gamePin"] = textfieldInt
         user?.saveInBackground()
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
     }
     /*
     // MARK: - Navigation

@@ -5,6 +5,7 @@
 //  Created by Yu Jun Yam on 10/12/22.
 //
 import UIKit
+import Parse
 
 class ImportViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -24,10 +25,27 @@ class ImportViewController: UIViewController, UINavigationControllerDelegate, UI
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             PhotoView.image = image
+            let resized = resizeImage(im: image, size: CGSizeMake(image.size.width/3, image.size.height/3))
+            let imageData = resized.pngData()! as NSData
+            let file = PFFileObject(name: "gameImage.png", data: imageData as Data)
+            PFUser.current()?["gameImage"] = file;
+            PFUser.current()?.saveInBackground()
         }
-        
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func resizeImage (im: UIImage, size: CGSize) -> UIImage {
+        let resized = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        resized.contentMode = UIView.ContentMode.scaleAspectFill
+        resized.image = im;
+        
+        UIGraphicsBeginImageContext(size);
+        resized.layer.render(in: UIGraphicsGetCurrentContext()!);
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()!;
+        UIGraphicsEndImageContext();
+        return newImage;
+    }
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
