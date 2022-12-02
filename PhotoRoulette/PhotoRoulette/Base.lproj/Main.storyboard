@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fuz-WF-Ayb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fuz-WF-Ayb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -17,13 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu6-cv-MNE">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu6-cv-MNE">
                                 <rect key="frame" x="37" y="338" width="319" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 1"/>
+                                        <color key="strokeColor" name="Color 1"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -33,11 +36,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-dw-gYn">
                                 <rect key="frame" x="37" y="414" width="319" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Color 1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" name="Color 1"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Color 1"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Hcx-Zl-qVC" kind="show" id="75h-Ro-86R"/>
@@ -70,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Create an Account-->
         <scene sceneID="rFY-9C-Odr">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6g-mW-s82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -79,26 +86,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-08-bBj">
-                                <rect key="frame" x="43" y="409" width="304" height="44"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-08-bBj">
+                                <rect key="frame" x="43" y="409" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="background color"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6o-e2-hR2">
-                                <rect key="frame" x="43" y="461" width="304" height="48"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6o-e2-hR2">
+                                <rect key="frame" x="43" y="461" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="background color"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnz-Sr-pYX">
                                 <rect key="frame" x="43" y="525" width="304" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 1"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -108,12 +124,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-1x-8dP">
                                 <rect key="frame" x="49" y="176" width="294" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="Color 1"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="mtv-Ke-P31">
+                                <rect key="frame" x="-33" y="0.0" width="281" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="icS-0x-m7k"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="background color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ppb-71-dMb"/>
+                    <navigationItem key="navigationItem" title="Create an Account" id="ppb-71-dMb"/>
                     <connections>
                         <outlet property="passwordTextField" destination="S6o-e2-hR2" id="z4a-7i-Wpt"/>
                         <outlet property="usernameTextField" destination="dfl-08-bBj" id="SYy-97-daw"/>
@@ -122,7 +143,7 @@
             </objects>
             <point key="canvasLocation" x="1870.9923664122136" y="3.5211267605633805"/>
         </scene>
-        <!--Log In To Account View Controller-->
+        <!--Log In-->
         <scene sceneID="kRd-fR-M0U">
             <objects>
                 <viewController id="bPt-g6-oZP" customClass="LogInToAccountViewController" customModule="PhotoRoulette" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,19 +151,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrp-bt-sDb">
-                                <rect key="frame" x="52" y="409" width="304" height="44"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrp-bt-sDb">
+                                <rect key="frame" x="52" y="409" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="background color"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-tF-mHP">
                                 <rect key="frame" x="52" y="524" width="304" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log In">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log In" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 1"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -150,21 +174,27 @@
                                     <action selector="clickSignUp:" destination="Hcx-Zl-qVC" eventType="touchUpInside" id="FX3-MM-QTJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-T3-M08">
-                                <rect key="frame" x="52" y="461" width="304" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-T3-M08">
+                                <rect key="frame" x="52" y="461" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="background color"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-d0-yHX">
                                 <rect key="frame" x="57" y="178" width="294" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="Color 1"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-wi-nRL">
+                                <rect key="frame" x="-32" y="0.0" width="281" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P4x-s6-m6G"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="background color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dwp-6p-ceD"/>
+                    <navigationItem key="navigationItem" title="Log In" id="dwp-6p-ceD"/>
                     <connections>
                         <outlet property="passwordLabel" destination="Ggw-T3-M08" id="6EP-X5-P1w"/>
                         <outlet property="usernameLabel" destination="yrp-bt-sDb" id="qT8-LG-wJR"/>
@@ -173,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-zN-uLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="737"/>
+            <point key="canvasLocation" x="1870.9923664122136" y="736.61971830985919"/>
         </scene>
         <!--Choose Game View Controller-->
         <scene sceneID="zO4-BZ-txq">
@@ -184,63 +214,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-Fi-XFC">
-                                <rect key="frame" x="109" y="181" width="174" height="52"/>
+                                <rect key="frame" x="100" y="181" width="194" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" name="background color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUG-gE-1JN">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUG-gE-1JN">
                                 <rect key="frame" x="55" y="553" width="293" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Join Game">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="irq-am-4PH" kind="show" id="qLM-Y8-6DA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-YM-Aoe">
-                                <rect key="frame" x="128" y="234" width="137" height="42"/>
+                                <rect key="frame" x="127" y="234" width="141" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                <color key="textColor" name="background color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="figure.stand.line.dotted.figure.stand" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="E35-Sb-q3N">
-                                <rect key="frame" x="81" y="312" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="Color 1"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVN-KF-FW3">
                                 <rect key="frame" x="55" y="485" width="293" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create Game">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
+                                    <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="0.0">
+                                        <color key="backgroundColor" name="Color 3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="6Un-kj-W3z" kind="show" id="gXP-9A-fdX"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape2" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-Du-ndF">
+                                <rect key="frame" x="-44" y="0.0" width="306" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Un-U3-ZVn"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="Color 1"/>
                     </view>
                     <navigationItem key="navigationItem" id="WZ3-kT-fcy">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="WyU-UD-Shu">
+                        <barButtonItem key="rightBarButtonItem" id="WyU-UD-Shu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="8Ph-GR-fWH">
                                 <rect key="frame" x="299.66666666666669" y="5" width="77.333333333333314" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Logout"/>
                             </button>
-                            <color key="tintColor" name="Color 1"/>
+                            <color key="tintColor" name="Color 2"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -253,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="2800.7633587786258" y="736.61971830985919"/>
         </scene>
-        <!--Join Game View Controller-->
+        <!--Enter Game Pin-->
         <scene sceneID="ipA-sh-zwn">
             <objects>
                 <viewController id="irq-am-4PH" customClass="JoinGameViewController" customModule="PhotoRoulette" customModuleProvider="target" sceneMemberID="viewController">
@@ -261,20 +294,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter game pin" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2P-ja-GTQ">
-                                <rect key="frame" x="79" y="397" width="235" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter a game code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2P-ja-GTQ">
+                                <rect key="frame" x="45" y="368" width="304" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" name="background color"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUi-RU-YUM">
-                                <rect key="frame" x="79" y="449" width="235" height="34"/>
+                                <rect key="frame" x="138" y="418" width="119" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Join Game!">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go!" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 1"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ImportButton:" destination="8A8-qy-VZD" eventType="touchUpInside" id="MHu-n8-WYF"/>
@@ -282,18 +318,15 @@
                                     <segue destination="8A8-qy-VZD" kind="show" id="5BF-uI-lFw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Game Pin" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onW-Ss-Kpz">
-                                <rect key="frame" x="88" y="304" width="216" height="43"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="IYy-D2-QnB">
+                                <rect key="frame" x="-33" y="0.0" width="281" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="33"/>
-                                <color key="textColor" name="Color 1"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3jM-qD-LpQ"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="background color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wUg-yU-89n"/>
+                    <navigationItem key="navigationItem" title="Enter Game Pin" id="wUg-yU-89n"/>
                     <connections>
                         <outlet property="gamePinTextField" destination="P2P-ja-GTQ" id="cYO-6O-GHb"/>
                     </connections>
@@ -302,7 +335,7 @@
             </objects>
             <point key="canvasLocation" x="3684.7328244274809" y="736.61971830985919"/>
         </scene>
-        <!--Import View Controller-->
+        <!--Choose Image-->
         <scene sceneID="ma5-TC-4CW">
             <objects>
                 <viewController id="8A8-qy-VZD" customClass="ImportViewController" customModule="PhotoRoulette" customModuleProvider="target" sceneMemberID="viewController">
@@ -310,11 +343,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F6A-cL-4AL">
-                                <rect key="frame" x="49" y="227.33333333333326" width="294" height="296"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="Color 1"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r12-mX-PQI">
                                 <rect key="frame" x="56" y="531" width="280" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -322,17 +350,26 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Choose Image">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ImportButton:" destination="8A8-qy-VZD" eventType="touchUpInside" id="JZg-SV-XEU"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F6A-cL-4AL">
+                                <rect key="frame" x="49" y="227.33333333333326" width="294" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="Color 1"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-Vm-QTu">
+                                <rect key="frame" x="-32" y="0.0" width="281" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4OO-hH-sPj"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="background color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Uhj-nZ-jmH"/>
+                    <navigationItem key="navigationItem" title="Choose Image" id="Uhj-nZ-jmH"/>
                     <connections>
                         <outlet property="PhotoView" destination="F6A-cL-4AL" id="t68-zv-K0y"/>
                     </connections>
@@ -341,7 +378,7 @@
             </objects>
             <point key="canvasLocation" x="4508" y="737"/>
         </scene>
-        <!--Create Game View Controller-->
+        <!--Start Game-->
         <scene sceneID="AK3-Ji-BHT">
             <objects>
                 <viewController id="6Un-kj-W3z" customClass="CreateGameViewController" customModule="PhotoRoulette" customModuleProvider="target" sceneMemberID="viewController">
@@ -356,8 +393,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YvJ-4A-NE6">
-                                <rect key="frame" x="0.0" y="321.66666666666674" width="393" height="387"/>
-                                <color key="backgroundColor" name="Color"/>
+                                <rect key="frame" x="0.0" y="321.66666666666674" width="393" height="384"/>
+                                <color key="backgroundColor" name="Color 4"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="143" id="Kto-Ub-Ask" customClass="PlayerCellTableViewCell" customModule="PhotoRoulette" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="143"/>
@@ -390,6 +427,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Players" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-Zp-JQY">
+                                <rect key="frame" x="143" y="279" width="107" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" name="Color 1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Na-wa-ibP">
                                 <rect key="frame" x="47" y="143" width="298" height="45"/>
                                 <color key="backgroundColor" name="Color 1"/>
@@ -406,34 +449,46 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVu-pt-RJO">
                                 <rect key="frame" x="47" y="730" width="298" height="45"/>
-                                <color key="backgroundColor" name="Color 1"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start Game">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 4"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start Game!">
+                                            <attributes>
+                                                <font key="NSFont" size="27" name="Futura-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.016492628539999998" green="0.016966850889999999" blue="0.03068110919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ImportButton:" destination="8A8-qy-VZD" eventType="touchUpInside" id="THT-Vj-cnW"/>
                                     <segue destination="8A8-qy-VZD" kind="show" id="EuV-KU-sQU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-uX-3pg">
-                                <rect key="frame" x="148" y="236" width="97" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shape2" translatesAutoresizingMaskIntoConstraints="NO" id="V82-2R-8Q5">
+                                <rect key="frame" x="-48" y="0.0" width="306" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Reload" showsActivityIndicator="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-uX-3pg">
+                                <rect key="frame" x="143" y="276" width="97" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="Color 1"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reload" showsActivityIndicator="YES">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="Color 4"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="clickReload:" destination="6Un-kj-W3z" eventType="touchUpInside" id="Atc-oW-LTl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Players" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-Zp-JQY">
-                                <rect key="frame" x="143" y="279" width="107" height="32"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" name="Color 1"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cQT-7E-Q1h"/>
-                        <color key="backgroundColor" red="0.9569450021" green="0.92886668439999998" blue="0.97255426649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="Color 1"/>
                         <constraints>
                             <constraint firstItem="sA0-p8-8Z2" firstAttribute="top" secondItem="4Na-wa-ibP" secondAttribute="bottom" constant="53" id="32o-V4-xXA"/>
                             <constraint firstItem="YvJ-4A-NE6" firstAttribute="top" secondItem="aAk-Zp-JQY" secondAttribute="bottom" constant="21" id="6hC-Xh-qHY"/>
@@ -450,7 +505,7 @@
                             <constraint firstItem="4Na-wa-ibP" firstAttribute="centerX" secondItem="cQT-7E-Q1h" secondAttribute="centerX" id="vzN-4N-sJG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Mua-2L-9aw"/>
+                    <navigationItem key="navigationItem" title="Start Game" id="Mua-2L-9aw"/>
                     <connections>
                         <outlet property="gamePin" destination="sA0-p8-8Z2" id="eJk-sb-1gG"/>
                         <outlet property="playersTableView" destination="YvJ-4A-NE6" id="mnh-q8-OHd"/>
@@ -482,22 +537,34 @@
     <inferredMetricsTieBreakers>
         <segue reference="EuV-KU-sQU"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" name="Color 1"/>
+    <color key="tintColor" name="background color"/>
     <resources>
         <image name="camera.on.rectangle" catalog="system" width="128" height="98"/>
         <image name="earth-globe 1" width="374" height="338"/>
-        <image name="figure.stand.line.dotted.figure.stand" catalog="system" width="128" height="82"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
         <image name="shape" width="191" height="161"/>
+        <image name="shape2" width="191" height="161"/>
         <namedColor name="Color">
             <color red="0.79100000858306885" green="0.73400002717971802" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color 1">
             <color red="0.31372549019607843" green="0.76078431372549016" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="Color 2">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 3">
+            <color red="0.058823529411764705" green="0.43137254901960786" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color 4">
+            <color red="0.74901960784313726" green="0.85490196078431369" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background color">
             <color red="0.98039215686274506" green="0.99215686274509807" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
