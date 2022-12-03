@@ -25,6 +25,7 @@
 		84C549E3F64248E4D1ACDE75 /* Pods_PhotoRoulette_PhotoRouletteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */; };
 		921E89F57A29F40709149707 /* Pods_PhotoRouletteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0395753EF89A44706CCD56BF /* Pods_PhotoRouletteTests.framework */; };
 		99DB9CB10DCE814017943637 /* Pods_PhotoRoulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */; };
+		AD62CD1A29394956001BFAFD /* ChoosePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToAccountViewController.swift; sourceTree = "<group>"; };
 		7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewController.swift; sourceTree = "<group>"; };
 		816A84BA9835222FF3DD81AB /* Pods-PhotoRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette.release.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette.release.xcconfig"; sourceTree = "<group>"; };
+		AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePicViewController.swift; sourceTree = "<group>"; };
 		B049BC0086A5B1133242019B /* Pods-PhotoRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette.debug.xcconfig"; sourceTree = "<group>"; };
 		B9682FF4CE22F139B082DDED /* Pods-PhotoRouletteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D10EC21448293D5D99C26877 /* Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				7BCA53E828E62C1300EA9E71 /* SignUpViewController.h */,
 				7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */,
 				7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */,
+				AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */,
 				7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */,
 				7B776D97290B19210050E6B7 /* ImportViewController.swift */,
 				7B714D29291ED8F600F25247 /* CreateGameViewController.swift */,
@@ -433,6 +436,7 @@
 				7B714D2A291ED8F600F25247 /* CreateGameViewController.swift in Sources */,
 				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
 				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
+				AD62CD1A29394956001BFAFD /* ChoosePicViewController.swift in Sources */,
 				7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */,
 				7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */,
 				7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */,
