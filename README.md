@@ -31,6 +31,7 @@ Since this is an iOS mobile application, the backend is written using Swift and 
 
 **<em>Frontend</em>** <br>
 We also work on the frontend in the XCode IDE using XCode storyboard and the builtin library UIKit. UI components are connected to their usage on the backend using the Cocoa Pods dependency manager.
+![Technical Architecture Diagram](/assets/tech.png)
 <br><br>
 
 ### Installation Instructions
