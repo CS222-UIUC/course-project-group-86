@@ -9,11 +9,17 @@ import UIKit
 
 class ScoreViewController: UIViewController {
 
+    @IBOutlet weak var showScore: UITextField!
+    var score:Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        showScore.text = String(score)
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
