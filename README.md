@@ -1,5 +1,4 @@
 # Photo Roulette
-<em>Aarthi Balaji, Runali Hatalkar, Shreya Vinjamuri, Yu Jun Yam</em>
 <br><br>
 
 ### Summary
