@@ -1,5 +1,4 @@
 # Photo Roulette
-<br><br>
 
 ### Summary
 Many people have random pictures on their phones that could offer a sense of enjoyment and understanding if shown to those who are close to them or whom 
