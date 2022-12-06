@@ -11,6 +11,7 @@
 @interface SignUpViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) UITapGestureRecognizer *tapGestureRecognizer;
 
 @end
 
@@ -19,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.passwordTextField.secureTextEntry = true;
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    self.tapGestureRecognizer.delegate = self;
+    [self.view addGestureRecognizer:self.tapGestureRecognizer];
+
     // Do any additional setup after loading the view.
 }
 
@@ -47,6 +52,13 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     
+}
+
+- (void) dismissKeyboard
+{
+    //Code to handle the gesture
+    [self.usernameTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 
 /*

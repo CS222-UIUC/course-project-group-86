@@ -22,6 +22,14 @@ class ChooseGameViewController: UIViewController {
 
     }
     
+    @IBAction func clickLogout(_ sender: Any) {
+        PFUser.logOutInBackground { (error: Error?) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "loginVC")
+            self.performSegue(withIdentifier: "logout", sender: nil);
+//            self.view.window?.rootViewController = loginVC
+        }
+    }
     
     @IBOutlet weak var createGameButton: UIButton!
     
