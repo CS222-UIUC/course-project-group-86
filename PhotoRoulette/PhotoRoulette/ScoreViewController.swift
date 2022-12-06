@@ -6,20 +6,35 @@
 //
 
 import UIKit
+import Parse
 
 class ScoreViewController: UIViewController {
 
-    @IBOutlet weak var showScore: UITextField!
     var score:Int!
-    
+    var players = [PFUser]()
+    @IBOutlet weak var firstPlaceWinner: UILabel!
+    @IBOutlet weak var yourScoreLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        showScore.text = String(score)
-
+        yourScoreLabel.text = String(score)
+        setWinner()
         // Do any additional setup after loading the view.
     }
     
+    func setWinner() {
+        var winner = players[0]
+        for index in 0...(players.count-1) {
+            let winner_score = winner["score"] as! Int
+            var score = 0;
+            if (players[index]["score"] != nil) {
+                score = (players[index]["score"] as! Int)
+            }
+            if (score > winner_score) {
+                winner = players[index]
+            }
+        }
+        self.firstPlaceWinner.text = winner.username;
+    }
     
 
     /*
