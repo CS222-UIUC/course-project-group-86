@@ -15,7 +15,7 @@ class ChoosePicViewController: UIViewController {
     var players = [PFUser]()
     var playersID = [String]()
     var pictures = [Any]()
-    
+    var generatedNums = [Int]()
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //
@@ -52,7 +52,14 @@ class ChoosePicViewController: UIViewController {
     
     // Connect to front end
 
-   
+    @IBOutlet weak var p1_button: UIButton!
+    
+    @IBOutlet weak var p2_button: UIButton!
+    
+    @IBOutlet weak var p3_button: UIButton!
+    
+    @IBOutlet weak var p4_button: UIButton!
+    
     @IBOutlet weak var Player1name: UILabel!
     
     
@@ -67,21 +74,22 @@ class ChoosePicViewController: UIViewController {
     @IBOutlet weak var randPic: PFImageView!
     
     var n = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         queryForPlayers {
             queryForPictures {
                 
                 n = Int.random(in: 1...4)
+                generatedNums.append(n)
                 randPic.file = pictures[n-1] as! PFFileObject
                 randPic.loadInBackground()
             }
         }
-        Player1name.text = "1"
-        Player2name.text = "2"
-        Player3name.text = "3"
-        Player4name.text = "4"
+        Player1name.text = players[0].username
+        Player2name.text = players[1].username
+        Player3name.text = players[2].username
+        Player4name.text = players[3].username
       }
 
     var score = 0
@@ -90,47 +98,88 @@ class ChoosePicViewController: UIViewController {
    
     @IBAction func Player1Ans(_ sender: Any) {
         if (n == 1) {
-            Answer.text = "Correct"
             score += 1
+            p1_button.backgroundColor = UIColor.green
+            let seconds = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                // Put your code which should be executed with a delay here
+                self.generateNewImage();
+            }
         } else {
-            Answer.text = "Sorry, that's wrong!"
+            p1_button.backgroundColor = UIColor.red
         }
+        
     }
     
 
     @IBAction func Player2Ans(_ sender: Any) {
         if (n == 2) {
-            Answer.text = "Correct"
             score += 1
+            p2_button.backgroundColor = UIColor.green
+            let seconds = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                // Put your code which should be executed with a delay here
+                self.generateNewImage();
+            }
         } else {
-            Answer.text = "Sorry, that's wrong!"
+            p2_button.backgroundColor = UIColor.red
         }
-
+        
     }
     
     @IBAction func Player3Ans(_ sender: Any) {
         if (n == 3) {
-            Answer.text = "Correct"
             score += 1
+            self.p3_button.backgroundColor = UIColor.green
+            let seconds = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                // Put your code which should be executed with a delay here
+                self.generateNewImage();
+            }
         } else {
-            Answer.text = "Sorry, that's wrong!"
+            p3_button.backgroundColor = UIColor.red
         }
-
+        
     }
     
     @IBAction func Player4Ans(_ sender: Any) {
         if (n == 4) {
-            Answer.text = "Correct"
             score += 1
+            self.p4_button.backgroundColor = UIColor.green
+            let seconds = 1.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                // Put your code which should be executed with a delay here
+                self.generateNewImage();
+            }
+            
         } else {
-            Answer.text = "Sorry, that's wrong!"
+            p4_button.backgroundColor = UIColor.red
         }
-
+        
     }
     
     @IBAction func ViewScoreSegue(_ sender: Any) {
-        self.performSegue(withIdentifier: "SeguetoShowScore", sender: self)
-        
+        //if (generatedNums.count == 4) {
+            self.performSegue(withIdentifier: "SeguetoShowScore", sender: self)
+       // }
+
+    }
+    
+    func generateNewImage() {
+        if (generatedNums.count == 4) {
+            self.performSegue(withIdentifier: "SeguetoShowScore", sender: self)
+        }
+        n = Int.random(in: 1...4)
+        while (generatedNums.contains(n)) {
+            n = Int.random(in: 1...4)
+        }
+        generatedNums.append(n)
+        randPic.file = pictures[n-1] as! PFFileObject
+        randPic.loadInBackground()
+        p1_button.backgroundColor = UIColor.blue
+        p2_button.backgroundColor = UIColor.blue
+        p3_button.backgroundColor = UIColor.blue
+        p4_button.backgroundColor = UIColor.blue
     }
     
 
@@ -144,7 +193,7 @@ class ChoosePicViewController: UIViewController {
         if(segue.identifier == "SeguetoShowScore"){
                     let displayVC = segue.destination as! ScoreViewController
                     displayVC.score = score
-            }
+        }
 
     }
 
