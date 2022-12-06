@@ -12,6 +12,8 @@ class LogInToAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordLabel.isSecureTextEntry = true
+
 
         // Do any additional setup after loading the view.
     }

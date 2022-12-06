@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.passwordTextField.secureTextEntry = true;
     // Do any additional setup after loading the view.
 }
 
