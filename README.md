@@ -33,7 +33,8 @@ We also work on the frontend in the XCode IDE using XCode storyboard and the bui
 <br><br>
 
 ### Installation Instructions
-
+1. Clone the repository locally.
+2. Run the simulator on XCode.
 <br><br>
 
 ### Group Members and Roles
