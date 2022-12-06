@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B714D2A291ED8F600F25247 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D29291ED8F600F25247 /* CreateGameViewController.swift */; };
+		7B714D2E291EDBE600F25247 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */; };
+		7B714D30291EE87C00F25247 /* PlayerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */; };
+		7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B776D97290B19210050E6B7 /* ImportViewController.swift */; };
+		7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */; };
+		7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */; };
+		7BCA53BA28E61DF700EA9E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53B828E61DF700EA9E71 /* Main.storyboard */; };
+		7BCA53BC28E61DF900EA9E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53BB28E61DF900EA9E71 /* Assets.xcassets */; };
+		7BCA53BF28E61DF900EA9E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */; };
+		7BCA53CA28E61DF900EA9E71 /* PhotoRouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53C928E61DF900EA9E71 /* PhotoRouletteTests.swift */; };
+		7BCA53D428E61DF900EA9E71 /* PhotoRouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53D328E61DF900EA9E71 /* PhotoRouletteUITests.swift */; };
+		7BCA53D628E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53D528E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift */; };
+		7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */; };
+		7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */; };
+		7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */; };
+		84C549E3F64248E4D1ACDE75 /* Pods_PhotoRoulette_PhotoRouletteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */; };
+		921E89F57A29F40709149707 /* Pods_PhotoRouletteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0395753EF89A44706CCD56BF /* Pods_PhotoRouletteTests.framework */; };
+		99DB9CB10DCE814017943637 /* Pods_PhotoRoulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */; };
+		AD62CD1A29394956001BFAFD /* ChoosePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */; };
+		AD62CD1C293D7233001BFAFD /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD62CD1B293D7233001BFAFD /* ScoreViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BCA53C628E61DF900EA9E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCA53A728E61DF700EA9E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCA53AE28E61DF700EA9E71;
+			remoteInfo = PhotoRoulette;
+		};
+		7BCA53D028E61DF900EA9E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCA53A728E61DF700EA9E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCA53AE28E61DF700EA9E71;
+			remoteInfo = PhotoRoulette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0395753EF89A44706CCD56BF /* Pods_PhotoRouletteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRouletteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.release.xcconfig"; sourceTree = "<group>"; };
+		58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette_PhotoRouletteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoRoulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B714D29291ED8F600F25247 /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellTableViewCell.swift; sourceTree = "<group>"; };
+		7B776D97290B19210050E6B7 /* ImportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewController.swift; sourceTree = "<group>"; };
+		7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoRoulette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7BCA53B928E61DF700EA9E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BCA53BB28E61DF900EA9E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BCA53BE28E61DF900EA9E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BCA53C028E61DF900EA9E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCA53C528E61DF900EA9E71 /* PhotoRouletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoRouletteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCA53C928E61DF900EA9E71 /* PhotoRouletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouletteTests.swift; sourceTree = "<group>"; };
+		7BCA53CF28E61DF900EA9E71 /* PhotoRouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoRouletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCA53D328E61DF900EA9E71 /* PhotoRouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouletteUITests.swift; sourceTree = "<group>"; };
+		7BCA53D528E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouletteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BCA53E428E6288500EA9E71 /* PhotoRoulette-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoRoulette-Bridging-Header.h"; sourceTree = "<group>"; };
+		7BCA53E828E62C1300EA9E71 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToAccountViewController.swift; sourceTree = "<group>"; };
+		7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewController.swift; sourceTree = "<group>"; };
+		816A84BA9835222FF3DD81AB /* Pods-PhotoRoulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette.release.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette.release.xcconfig"; sourceTree = "<group>"; };
+		AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePicViewController.swift; sourceTree = "<group>"; };
+		AD62CD1B293D7233001BFAFD /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		B049BC0086A5B1133242019B /* Pods-PhotoRoulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette.debug.xcconfig"; sourceTree = "<group>"; };
+		B9682FF4CE22F139B082DDED /* Pods-PhotoRouletteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRouletteTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRouletteTests/Pods-PhotoRouletteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D10EC21448293D5D99C26877 /* Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC4E4C60DDC0F7C25C2F942B /* Pods-PhotoRoulette-PhotoRouletteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoRoulette-PhotoRouletteUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BCA53AC28E61DF700EA9E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DB9CB10DCE814017943637 /* Pods_PhotoRoulette.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53C228E61DF900EA9E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921E89F57A29F40709149707 /* Pods_PhotoRouletteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53CC28E61DF900EA9E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C549E3F64248E4D1ACDE75 /* Pods_PhotoRoulette_PhotoRouletteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		674EC47145713A619C496FD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B049BC0086A5B1133242019B /* Pods-PhotoRoulette.debug.xcconfig */,
+				816A84BA9835222FF3DD81AB /* Pods-PhotoRoulette.release.xcconfig */,
+				FC4E4C60DDC0F7C25C2F942B /* Pods-PhotoRoulette-PhotoRouletteUITests.debug.xcconfig */,
+				D10EC21448293D5D99C26877 /* Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig */,
+				B9682FF4CE22F139B082DDED /* Pods-PhotoRouletteTests.debug.xcconfig */,
+				2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BCA53A628E61DF700EA9E71 = {
+			isa = PBXGroup;
+			children = (
+				7BCA53B128E61DF700EA9E71 /* PhotoRoulette */,
+				7BCA53C828E61DF900EA9E71 /* PhotoRouletteTests */,
+				7BCA53D228E61DF900EA9E71 /* PhotoRouletteUITests */,
+				7BCA53B028E61DF700EA9E71 /* Products */,
+				674EC47145713A619C496FD0 /* Pods */,
+				9803949EEC63C05FB4B02AFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BCA53B028E61DF700EA9E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */,
+				7BCA53C528E61DF900EA9E71 /* PhotoRouletteTests.xctest */,
+				7BCA53CF28E61DF900EA9E71 /* PhotoRouletteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BCA53B128E61DF700EA9E71 /* PhotoRoulette */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA53B228E61DF700EA9E71 /* AppDelegate.swift */,
+				7BCA53B428E61DF700EA9E71 /* SceneDelegate.swift */,
+				7BCA53B828E61DF700EA9E71 /* Main.storyboard */,
+				7BCA53BB28E61DF900EA9E71 /* Assets.xcassets */,
+				7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */,
+				7BCA53C028E61DF900EA9E71 /* Info.plist */,
+				7BCA53E428E6288500EA9E71 /* PhotoRoulette-Bridging-Header.h */,
+				7BCA53E828E62C1300EA9E71 /* SignUpViewController.h */,
+				7BCA53E928E62C1300EA9E71 /* SignUpViewController.m */,
+				AD62CD1B293D7233001BFAFD /* ScoreViewController.swift */,
+				7BCF272E28F9BBF000AAF1A5 /* LogInToAccountViewController.swift */,
+				AD62CD1929394956001BFAFD /* ChoosePicViewController.swift */,
+				7BCF273028F9DC5700AAF1A5 /* ChooseGameViewController.swift */,
+				7B776D97290B19210050E6B7 /* ImportViewController.swift */,
+				7B714D29291ED8F600F25247 /* CreateGameViewController.swift */,
+				7B714D2D291EDBE600F25247 /* JoinGameViewController.swift */,
+				7B714D2F291EE87C00F25247 /* PlayerCellTableViewCell.swift */,
+			);
+			path = PhotoRoulette;
+			sourceTree = "<group>";
+		};
+		7BCA53C828E61DF900EA9E71 /* PhotoRouletteTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA53C928E61DF900EA9E71 /* PhotoRouletteTests.swift */,
+			);
+			path = PhotoRouletteTests;
+			sourceTree = "<group>";
+		};
+		7BCA53D228E61DF900EA9E71 /* PhotoRouletteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BCA53D328E61DF900EA9E71 /* PhotoRouletteUITests.swift */,
+				7BCA53D528E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift */,
+			);
+			path = PhotoRouletteUITests;
+			sourceTree = "<group>";
+		};
+		9803949EEC63C05FB4B02AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				732C27073F5902ED1EEA58D6 /* Pods_PhotoRoulette.framework */,
+				58A9FF98CE7B2AD182F192AB /* Pods_PhotoRoulette_PhotoRouletteUITests.framework */,
+				0395753EF89A44706CCD56BF /* Pods_PhotoRouletteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BCA53AE28E61DF700EA9E71 /* PhotoRoulette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCA53D928E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRoulette" */;
+			buildPhases = (
+				7528819D6D13336ABE49BE59 /* [CP] Check Pods Manifest.lock */,
+				7BCA53AB28E61DF700EA9E71 /* Sources */,
+				7BCA53AC28E61DF700EA9E71 /* Frameworks */,
+				7BCA53AD28E61DF700EA9E71 /* Resources */,
+				B8D39C02138D895DD0626AF4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoRoulette;
+			productName = PhotoRoulette;
+			productReference = 7BCA53AF28E61DF700EA9E71 /* PhotoRoulette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BCA53C428E61DF900EA9E71 /* PhotoRouletteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCA53DC28E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRouletteTests" */;
+			buildPhases = (
+				4766A075E506A12909300323 /* [CP] Check Pods Manifest.lock */,
+				7BCA53C128E61DF900EA9E71 /* Sources */,
+				7BCA53C228E61DF900EA9E71 /* Frameworks */,
+				7BCA53C328E61DF900EA9E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BCA53C728E61DF900EA9E71 /* PBXTargetDependency */,
+			);
+			name = PhotoRouletteTests;
+			productName = PhotoRouletteTests;
+			productReference = 7BCA53C528E61DF900EA9E71 /* PhotoRouletteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BCA53CE28E61DF900EA9E71 /* PhotoRouletteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCA53DF28E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRouletteUITests" */;
+			buildPhases = (
+				4CF33E30F7EA5EA902BAD9F7 /* [CP] Check Pods Manifest.lock */,
+				7BCA53CB28E61DF900EA9E71 /* Sources */,
+				7BCA53CC28E61DF900EA9E71 /* Frameworks */,
+				7BCA53CD28E61DF900EA9E71 /* Resources */,
+				D2402575FAE26D83361F6643 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BCA53D128E61DF900EA9E71 /* PBXTargetDependency */,
+			);
+			name = PhotoRouletteUITests;
+			productName = PhotoRouletteUITests;
+			productReference = 7BCA53CF28E61DF900EA9E71 /* PhotoRouletteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BCA53A728E61DF700EA9E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					7BCA53AE28E61DF700EA9E71 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+					7BCA53C428E61DF900EA9E71 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 7BCA53AE28E61DF700EA9E71;
+					};
+					7BCA53CE28E61DF900EA9E71 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 7BCA53AE28E61DF700EA9E71;
+					};
+				};
+			};
+			buildConfigurationList = 7BCA53AA28E61DF700EA9E71 /* Build configuration list for PBXProject "PhotoRoulette" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BCA53A628E61DF700EA9E71;
+			productRefGroup = 7BCA53B028E61DF700EA9E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BCA53AE28E61DF700EA9E71 /* PhotoRoulette */,
+				7BCA53C428E61DF900EA9E71 /* PhotoRouletteTests */,
+				7BCA53CE28E61DF900EA9E71 /* PhotoRouletteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BCA53AD28E61DF700EA9E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCA53BF28E61DF900EA9E71 /* LaunchScreen.storyboard in Resources */,
+				7BCA53BC28E61DF900EA9E71 /* Assets.xcassets in Resources */,
+				7BCA53BA28E61DF700EA9E71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53C328E61DF900EA9E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53CD28E61DF900EA9E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4766A075E506A12909300323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoRouletteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF33E30F7EA5EA902BAD9F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoRoulette-PhotoRouletteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7528819D6D13336ABE49BE59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoRoulette-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D39C02138D895DD0626AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette/Pods-PhotoRoulette-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2402575FAE26D83361F6643 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoRoulette-PhotoRouletteUITests/Pods-PhotoRoulette-PhotoRouletteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BCA53AB28E61DF700EA9E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B714D2E291EDBE600F25247 /* JoinGameViewController.swift in Sources */,
+				AD62CD1C293D7233001BFAFD /* ScoreViewController.swift in Sources */,
+				7B714D2A291ED8F600F25247 /* CreateGameViewController.swift in Sources */,
+				7BCA53B328E61DF700EA9E71 /* AppDelegate.swift in Sources */,
+				7BCA53B528E61DF700EA9E71 /* SceneDelegate.swift in Sources */,
+				AD62CD1A29394956001BFAFD /* ChoosePicViewController.swift in Sources */,
+				7BCA53EA28E62C1300EA9E71 /* SignUpViewController.m in Sources */,
+				7BCF272F28F9BBF000AAF1A5 /* LogInToAccountViewController.swift in Sources */,
+				7BCF273128F9DC5700AAF1A5 /* ChooseGameViewController.swift in Sources */,
+				7B776D98290B19210050E6B7 /* ImportViewController.swift in Sources */,
+				7B714D30291EE87C00F25247 /* PlayerCellTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53C128E61DF900EA9E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCA53CA28E61DF900EA9E71 /* PhotoRouletteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA53CB28E61DF900EA9E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCA53D428E61DF900EA9E71 /* PhotoRouletteUITests.swift in Sources */,
+				7BCA53D628E61DF900EA9E71 /* PhotoRouletteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BCA53C728E61DF900EA9E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCA53AE28E61DF700EA9E71 /* PhotoRoulette */;
+			targetProxy = 7BCA53C628E61DF900EA9E71 /* PBXContainerItemProxy */;
+		};
+		7BCA53D128E61DF900EA9E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCA53AE28E61DF700EA9E71 /* PhotoRoulette */;
+			targetProxy = 7BCA53D028E61DF900EA9E71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BCA53B828E61DF700EA9E71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BCA53B928E61DF700EA9E71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BCA53BD28E61DF900EA9E71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BCA53BE28E61DF900EA9E71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BCA53D728E61DF900EA9E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BCA53D828E61DF900EA9E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BCA53DA28E61DF900EA9E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B049BC0086A5B1133242019B /* Pods-PhotoRoulette.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2C96ZMXAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoRoulette/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoRoulette/PhotoRoulette-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BCA53DB28E61DF900EA9E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816A84BA9835222FF3DD81AB /* Pods-PhotoRoulette.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R2C96ZMXAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoRoulette/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRoulette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PhotoRoulette/PhotoRoulette-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BCA53DD28E61DF900EA9E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9682FF4CE22F139B082DDED /* Pods-PhotoRouletteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRouletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoRoulette.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoRoulette";
+			};
+			name = Debug;
+		};
+		7BCA53DE28E61DF900EA9E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2239435E2AD0F320927CBEB6 /* Pods-PhotoRouletteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRouletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoRoulette.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoRoulette";
+			};
+			name = Release;
+		};
+		7BCA53E028E61DF900EA9E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4E4C60DDC0F7C25C2F942B /* Pods-PhotoRoulette-PhotoRouletteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRouletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoRoulette;
+			};
+			name = Debug;
+		};
+		7BCA53E128E61DF900EA9E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10EC21448293D5D99C26877 /* Pods-PhotoRoulette-PhotoRouletteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = group86.PhotoRouletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoRoulette;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BCA53AA28E61DF700EA9E71 /* Build configuration list for PBXProject "PhotoRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCA53D728E61DF900EA9E71 /* Debug */,
+				7BCA53D828E61DF900EA9E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCA53D928E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRoulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCA53DA28E61DF900EA9E71 /* Debug */,
+				7BCA53DB28E61DF900EA9E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCA53DC28E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRouletteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCA53DD28E61DF900EA9E71 /* Debug */,
+				7BCA53DE28E61DF900EA9E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCA53DF28E61DF900EA9E71 /* Build configuration list for PBXNativeTarget "PhotoRouletteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCA53E028E61DF900EA9E71 /* Debug */,
+				7BCA53E128E61DF900EA9E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BCA53A728E61DF700EA9E71 /* Project object */;
+}
