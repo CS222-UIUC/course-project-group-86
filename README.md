@@ -1,7 +1,7 @@
 # Photo Roulette
 
 ### Summary
-Many people have random pictures, and what better way to use them than to get to know those around you better! Photo Roulette is a multiplayer iOS game where photos are selected from every participant's camera roll and are displayed on the
+Many people have random pictures on their camera roll, and what better way to use them than to get to know those around you better! Photo Roulette is a multiplayer iOS game where users can select a photo from their camera roll, and these photose are displayed on the
 screen one at a time for the other users to guess whose camera roll the picture belongs to. This game is the perfect way for players to learn anything 
 from one's lifestyle to their personality and could easily break the ice during friendly gatherings.
 
